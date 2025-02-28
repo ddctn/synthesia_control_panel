@@ -189,7 +189,6 @@ button:hover {
 .waving {
   height: 14.5vw;
   position: absolute;
-  /* margin-top: -13vw; */
   animation: wave 6s linear infinite;
 }
 
@@ -197,8 +196,6 @@ button:hover {
   from{transform: translateX(-42.917vw);}
   to{transform: translateX(-85.834vw);} 
 }
-
-/* 42.917vw */
 
 .slashanimation2 {
   width: 1.4vw;
