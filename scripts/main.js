@@ -3,6 +3,7 @@
 let btn1 = document.querySelector(".choosebtn");
 let btn2 = document.querySelector(".createbtn");
 let rtrn = document.querySelector(".rtrn");
+let rtrn1 = document.querySelector(".rtrn1");
 
 let sections = document.querySelectorAll(".mainsec, .choose, .create");
 
@@ -27,5 +28,9 @@ btn2.addEventListener("click", function () {
 });
 
 rtrn.addEventListener("click", function () {
+  action("mainsec");
+});
+
+rtrn1.addEventListener("click", function () {
   action("mainsec");
 });

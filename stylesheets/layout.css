@@ -26,11 +26,15 @@ h2 {
 h3 {
   color: white;
   font-size: 2vw;
+  margin: 3.84vw 0 0 71.8vw;
+  position: absolute;
 }
 
 h4 {
   color: white;
   font-size: 1.3vw;
+  margin: 3.84vw 0 0 71.8vw;
+  position: absolute;
 }
 
 section {
@@ -96,7 +100,7 @@ button:hover {
   margin: 26vw 0 0 50vw;
 }
 
-.rtrn {
+.rtrn, .rtrn1 {
   border: none;
   color: white;
   position: absolute;
@@ -113,6 +117,16 @@ button:hover {
 }
 
 .rtrn:active {
+  color: #C40000;
+  text-decoration: underline;
+}
+
+.rtrn1:hover {
+  color: #C40000;
+  text-decoration: none;
+}
+
+.rtrn1:active {
   color: #C40000;
   text-decoration: underline;
 }
@@ -164,13 +178,24 @@ button:hover {
   width: 12.76vw;
   height: 14.583vw;
   position: absolute;
-  margin: 33.7vw 0 0 79vw;
+  margin: -15vw 0 0 79vw;
   overflow: hidden;
-  text-align: center;
 }
 
-.wave img {
+.wavebox {
   width: 12.76vw;
+}
+
+.waving {
+  height: 14.5vw;
+  position: absolute;
+  /* margin-top: -13vw; */
+  animation: wave 3s linear infinite;
+}
+
+@keyframes wave {
+  from{transform: translateX(-13.385vw);}
+  to{transform: translateX(-26.770vw);}
 }
 
 .slashanimation2 {
