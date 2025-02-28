@@ -190,13 +190,15 @@ button:hover {
   height: 14.5vw;
   position: absolute;
   /* margin-top: -13vw; */
-  animation: wave 3s linear infinite;
+  animation: wave 6s linear infinite;
 }
 
 @keyframes wave {
-  from{transform: translateX(-13.385vw);}
-  to{transform: translateX(-26.770vw);}
+  from{transform: translateX(-42.917vw);}
+  to{transform: translateX(-85.834vw);} 
 }
+
+/* 42.917vw */
 
 .slashanimation2 {
   width: 1.4vw;
