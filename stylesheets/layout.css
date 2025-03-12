@@ -192,22 +192,88 @@ button:hover {
   animation: wave 6s linear infinite;
 }
 
-@keyframes wave {
-  from{transform: translateX(-42.917vw);}
-  to{transform: translateX(-85.834vw);} 
+.slash {
+  width: 2vw;
+  position: absolute;
 }
 
-.slashanimation2 {
-  width: 1.4vw;
-  height: 9vw;
-  position: absolute;
-  margin: -6.3vw 0 0 93vw;
+.slash21 {
+  margin: -15vw 0 0 6vw;
 }
 
-.slashanimation img{
-  position: absolute;
-  width: 1.4vw;
+.slash22 {
+  margin: -14vw 0 0 6vw;
+  animation: domino1 5s ease-in-out infinite;
 }
+
+.slash23 {
+  margin: -13vw 0 0 6vw;
+  animation: domino2 5s ease-in-out infinite;
+}
+
+.slash24 {
+  margin: -12vw 0 0 6vw;
+  animation: domino3 5s ease-in-out infinite;
+}
+
+.slash25 {
+  margin: -11vw 0 0 6vw;
+  animation: domino4 5s ease-in-out infinite;
+}
+
+.slash26 {
+  margin: -10vw 0 0 6vw;
+  animation: domino5 5s ease-in-out infinite;
+}
+
+.slash27 {
+  margin: -9vw 0 0 6vw;
+  animation: domino6 5s ease-in-out infinite;
+}
+
+.slash28 {
+  margin: -8vw 0 0 6vw;
+  animation: domino7 5s ease-in-out infinite;
+}
+
+/* @keyframes domino1 {
+  0%{transform: translateY(-15vw);}
+  70%{transform: translateY(-15vw);}
+  100%{transform: translateY(-13vw);}
+} */
+
+@keyframes domino1 {
+  0% {transform: translateY(0);}
+  40% { transform: translateY(10%);}
+  100%{ transform: translateY(10%);}
+}
+
+@keyframes domino2 {
+    0% {transform: translateY(0);}
+    30% { transform: translateY(15%);}
+    100%{ transform: translateY(15%);}
+ }
+
+  @keyframes domino3 {
+    0% {transform: translateY(0);}
+    20% { transform: translateY(15%);}
+    100%{ transform: translateY(0);}
+  }
+
+  @keyframes domino4 {
+    0% {transform: translateY(0);}
+    50% { transform: translateY(13%);}
+    97% { transform: translateY(13%);}
+    98% { transform: translateY(13%);}
+    99% { transform: translateY(13%);}
+    100%{ transform: translateY(13%);}
+  }
+
+  @keyframes domino4 {
+    0% {transform: translateY(0);}
+    50% { transform: translateY(10%);}
+    100%{ transform: translateY(0);}
+  }
 
 .choosingbuttons {
   margin: 16.3vw 0 0 11vw;
@@ -237,4 +303,32 @@ button:hover {
   animation: spin 4.5s linear infinite;
   transform-style: preserve-3d; 
   position: absolute;
+}
+
+.range_slider_choose {
+  width: 28vw;
+  height: 5vw;  
+  position: absolute;
+  margin: 33.8vw 0 0 9.2vw;
+}
+
+.range1 {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 0.26vw;
+  background: #8383AD;
+}
+
+.range1 datalist option {
+	width: 10px;
+	height: 10px;
+	min-height: 10px;
+	border-radius: 100px;
+	white-space: nowrap;       
+  padding: 0;
+  line-height: 40px;
 }
