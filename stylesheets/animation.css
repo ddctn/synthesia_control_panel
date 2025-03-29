@@ -1,9 +1,13 @@
-@keyframes spin {
-  from { transform: rotateY(0deg);}
-  to   { transform: rotateY(360deg);}
+@keyframes wave {
+  from{transform: translateX(0%);}
+  to{transform: translateX(-50%);} 
 }
 
-@keyframes wave {
-  from{transform: translateX(-42.917vw);}
-  to{transform: translateX(-85.834vw);} 
-}
+@keyframes synthesise {
+  0%{border-color: #A8A8FF; opacity: 0; transform: rotateY(0deg);}
+  2%{border-color: #A8A8FF; opacity: 1;}
+  25%{border-color: #5b13b3; }
+  50%{border-color: #bc49ae;}
+  75%{border-color: #8e0a1a;}
+  100%{border-color: #A8A8FF; transform: rotateY(360deg);}
+  }

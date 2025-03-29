@@ -3,164 +3,150 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="article">       <!-- тип добавляемого материала, например, «article» – статья, «movie» — кино и так далее; -->
-    <meta property="og:url" content="{ссылка}">       <!-- ссылка на саму веб-страницу, которая добавляется в социальную сеть -->
-    <meta property="og:title" content="название">     <!-- название материала; -->
-    <meta property="og:description" content="текст">  <!-- описание материала, заполнять не обязательно; -->
-    <meta property="og:image" content="{картинка}">   <!-- ссылка на картинку, которая должна сопровождать материал; -->
-    <title>...</title> <!-- Write here your project name -->
-      <link rel="icon" href="./source/favicon.svg"> <!-- отображаетмя в шапке - важно не забывать -->
+    <meta property="og:type" content="web-poster">
+    <meta property="og:url" content="https://ddctn.github.io/synthesia_control_panel/">
+    <meta property="og:title" content="synthesia web-poster">
+    <meta property="og:description" content="interactive web-poster">
+    <title>SYNTHESIA|control panel</title>
+      <link rel="icon" href="./source/favicon.svg">
       <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
       <script src="scripts/main.js" charset="utf-8" defer></script>
   </head>
 
   <body>
+    <main>
+      <section class="sec1">
+        <h1>SYNTHESIA</h1>
+        <h2>среда разработки энергетического баланса</h2>
+      </section>
 
-    <section class="mainsec block">
-      <h1>&lt;&sol;SYNTHESIA&gt;</h1>
-      <h2>панель управления</h2>
-      <button class="choosebtn btn1">выбор баланса</button>
-      <button class="createbtn btn1">создание баланса</button>
-      <div class="rotation">
-        <div class="rotate rot1"></div>
-        <div class="rotate rot2"></div>
-        <div class="rotate rot3"></div>
-        <div class="rotate rot4"></div>
-        <div class="rotate rot5"></div>
-        <div class="rotate rot6"></div>
-        <div class="rotate rot7"></div>
-        <div class="rotate rot8"></div>
-        <div class="rotate rot9"></div>
+      <section class="sec2">
+        <p>Приветствуем вас в среде разработки энергетического баланса  SYNTHESIA.
+          <br>Вам необходимо разработать состав.
+          В случае нарушения регламента будет проведена проверка, ваши действия<br>будут заблокированы.</p>
+      </section>
+
+      <section class="sec3">
+        <img class="wave" src="./source/wave.svg">
+      </section>
+
+      <section class="sec4">
+
+          <p>стрессоустойчивость</p>
+          <label class="switch">
+            <input type="checkbox" class="switch_input">
+            <span class="switch_slider"></span>
+          </label>
+
+          <p>улучшение памяти</p>
+
+          <label class="switch">
+            <input type="checkbox" class="switch_input">
+            <span class="switch_slider"></span>
+          </label>
+
+          <p>иммунитет</p>
+
+          <label class="switch">
+            <input type="checkbox" class="switch_input">
+            <span class="switch_slider"></span>
+          </label>
+      </section>
+
+      <section class="sec5">
+        <p>скорость действия</p>
+        <div class="stepped-slider">
+          <div class="slider-track">
+              <div class="mark"></div>
+              <div class="mark"></div>
+              <div class="mark"></div>
+              <div class="mark"></div>
+              <div class="mark"></div>
+              <div class="mark"></div>
+          </div>
+          <div class="slider-thumb"></div>
+        </div>
+        <div class="stepstext">
+          <p>15м</p>
+          <p>45м</p>
+          <p>1,5ч</p>
+          <p>5ч</p>
+          <p>12ч</p>
+          <p>1д</p>
+        </div>
+
+        <p>интенсивность</p>
+        <div class="dotted-slider">
+          <div class="dot" data-index="0"></div>
+          <div class="dot" data-index="1"></div>
+          <div class="dot" data-index="2"></div>
+          <div class="dot" data-index="3"></div>
+          <div class="dot" data-index="4"></div>
+          <div class="dot" data-index="5"></div>
+          <div class="dot" data-index="6"></div>
+          <div class="dot" data-index="7"></div>
+          <div class="dot" data-index="8"></div>
+          <div class="dot" data-index="9"></div>
+        </div>
+      </section>
+
+      <section class="sec6">
+        <p>бодрость</p>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+        <p>концентрация</p>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+        <p>скорость мышления</p>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+      </section>
+
+      <section class="sec7">
+        <button class="synthesbtn">синтезировать</button>
+        <div class="center">
+          <div class="rotating-div"></div>
+          <div class="rotating-div rotating-div2"></div>
+          <div class="rotating-div rotating-div3"></div>
+          <div class="rotating-div rotating-div4"></div>
+          <div class="rotating-div rotating-div5"></div>
+          <div class="rotating-div rotating-div6"></div>
+        </div>
+      </section>
+
+      <section class="sec8">
+        <button class="change-btn">сменить генератор</button>
+        <img class="synth1 block" src="./source/synth1.svg">
+        <img class="synth2 none" src="./source/synth2.svg">
+      </section>
+
+      <section class="sec9">
+        <button class="modal-btn">802.3a</button>
+        <button class="modal-btn">802.3ah</button>
+        <button class="modal-btn">802.3bp</button>
+
+        <button class="modal-btn">802.3j</button>
+        <button class="modal-btn">802.3ax</button>
+        <button class="modal-btn">802.3.1</button>
+
+        <button class="modal-btn">802.3ab</button>
+        <button class="modal-btn">802.3bz</button>
+        <button class="modal-btn">802.3au</button>
+      </section>
+
+      <section id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 class="errortext">Ошибка</h1>
+            <p>Доступ запрещён.<br>У вас нет прав для просмотра данных сведений.</p>
+        </section>  
+
       </div>
-
-        <img class="slash slash21" src="./source/slash.svg">
-        <img class="slash slash22" src="./source/slash.svg">
-        <img class="slash slash23" src="./source/slash.svg">
-        <img class="slash slash24" src="./source/slash.svg">
-        <img class="slash slash25" src="./source/slash.svg">
-        <img class="slash slash26" src="./source/slash.svg">
-        <img class="slash slash27" src="./source/slash.svg">
-        <img class="slash slash28" src="./source/slash.svg">
-  
-      <!-- <div class="wave">
-        <img class="wavebox" src="./source/wavebox.svg">
-        <img class="waving" src="./source/wave.svg">
-      </div> -->
-    </section>
-
-    <section class="choose none">
-      <button class="rtrn">вернуться</button>
-      <h3>&lt;выбор баланса&gt;</h3>
-      <div class="choosingbuttons">
-        <div><button class="btn1">802.3a</button></div>
-        <div><button class="btn1">802.3ah</button></div>
-        <div><button class="btn1">802.3bp</button></div>
-        <div><button class="btn1">802.3j</button></div>
-        <div><button class="btn1">802.3ax</button></div>
-        <div><button class="btn1">802.3.1</button></div>
-        <div><button class="btn1">802.3ab</button></div>
-        <div><button class="btn1">802.3bz</button></div>
-        <div><button class="btn1">802.3au</button></div>    
-      </div>
-
-    </section>
-
-    <section class="create none">
-      <button class="rtrn1">вернуться</button>
-      <div class="range_slider_choose">
-      <input
-        type="range"
-        min="0"
-        max="60"
-        value="0"
-        class="range1"
-        step="10">
-        <datalist id="ticks1">
-          <option value="1">15 мин</option>
-          <option value="2">45 мин</option>
-          <option value="3">1,5 ч</option>
-          <option value="4">5 ч</option>
-          <option value="5">12 ч</option>
-          <option value="6">1 д</option>
-        </datalist>
-      </div>
-
-    </section>
-
-    <section class="first none">
-      <h3>802.3a</h3>
-      <button class="rtrn">вернуться</button>
-      <button class="edt">редактировать</button>
-    </section>
-
-    <section class="second none">
-      <h3>802.3ah</h3>
-      <button class="rtrn">вернуться</button>
-      <button class="edt">редактировать</button>
-    </section>
-
-    <section class="third none">
-      <h3>802.3bp</h3>
-      <button class="rtrn">вернуться</button>
-      <button class="edt">редактировать</button>
-    </section>
-
-    <section class="fourth none">
-      <h3>802.3j</h3>
-      <button class="rtrn">вернуться</button>
-      <button class="edt">редактировать</button>
-    </section>
-
-    <section class="fifth none">
-      <h3>802.3ax</h3>
-      <button class="rtrn">вернуться</button>
-      <button class="edt">редактировать</button>
-    </section>
-
-    <section class="sixth none">
-      <h3>802.3.1</h3>
-      <button class="rtrn">вернуться</button>
-      <button class="edt">редактировать</button>
-    </section>
-
-    <section class="seventh none">
-      <h3>802.3ab</h3>
-      <button class="rtrn">вернуться</button>
-      <button class="edt">редактировать</button>
-    </section>
-
-    <section class="eighth none">
-      <h3>802.3bz</h3>
-      <button class="rtrn">вернуться</button>
-      <button class="edt">редактировать</button>
-    </section>
-
-    <section class="ninth none">
-      <p>802.3au</p>
-      <button class="rtrn">вернуться</button>
-      <button class="edt">редактировать</button>
-    </section>
-
-    <section class="error none">
-      <button class="goback">вернуться</button>
-      <p>Ошибка</p>
-      <p>Доступ запрещён.<br>
-        У вас нет прав для выполнения этого действия.</p>
-    </section>
-
-    <section class="synthesis none">
-      <h4>обработка...</h4>
-      <div class="rotation2">
-        <div class="rotate2 rot1"></div>
-        <div class="rotate2 rot2"></div>
-        <div class="rotate2 rot3"></div>
-        <div class="rotate2 rot4"></div>
-        <div class="rotate2 rot5"></div>
-        <div class="rotate2 rot6"></div>
-        <div class="rotate2 rot7"></div>
-        <div class="rotate2 rot8"></div>
-        <div class="rotate2 rot9"></div>
-      </div>
-    </section>
+    </main>
   </body>
 </html>
+
+
