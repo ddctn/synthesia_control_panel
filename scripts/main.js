@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  //
+  // кнопка синтеза
 
   const synthbtn = document.querySelector(".synthesbtn");
   const rotatingDivs = document.querySelectorAll(".rotating-div");
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  ////
+  // кнопка переключения картинки
 
   const synths = document.querySelectorAll(".synth1, .synth2");
   const changebtn = document.querySelector(".change-btn");
