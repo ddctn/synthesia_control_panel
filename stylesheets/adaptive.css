@@ -72,7 +72,7 @@
 
   main {
     grid-template-columns: 96.618vw;
-    grid-template-rows: 15.459vw 28.261vw 28.261vw 34.058vw 34.058vw 34.058vw 34.058vw 81.386vw 60.425vw;
+    grid-template-rows: 15.459vw 28.261vw 28.261vw 34.058vw 34.058vw 34.058vw 117.058vw 52.386vw 50.425vw;
   }
 
   .sec1 {
@@ -115,10 +115,11 @@
     grid-row-start: 6;
     grid-row-end: 7;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 38% 50%;;
     grid-template-rows: 30% 30% 30%;
     gap: 8% 19%;
     padding-top: 4%;
+    
 }
   .sec7 {
     grid-column-start: 1;
@@ -137,6 +138,8 @@
     grid-column-end: 2;
     grid-row-start: 9;
     grid-row-end: 10;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 15% 15% 15%;
   }
 
   h1 {
@@ -178,10 +181,10 @@
 }
 
 .stepped-slider {
-  width: 38vw;
+  width: 41vw;
   height: 2.6vw;
   margin-left: 5%;
-  margin-top: 2%;
+  margin-top: 13%;
 }
 
 .slider-track {
@@ -205,9 +208,49 @@
   height: 6.604vw;
 }
 
+.change-btn {
+  margin: 102% 35%;
+}
 
 .dotted-slider {
   margin-top: 13%;
+}
+
+button {
+  width: 25.5vw;
+  height: 6.353vw;
+  font-size: 2vw;
+}
+
+.synthesbtn {
+  margin: 39% 34%;
+}
+.rotating-div {
+  width: 26vw;
+  height: 28vw;
+}
+
+.progress-container {
+  width: 36.625vw;
+  height: 4.042vw;
+}
+
+.stepstext {
+  margin: 9% 48%;
+  gap: 20%;
+}
+
+.stepstext p {
+  font-size: 2.042vw;
+}
+.mark {
+  height: 2vw;
+  width: 1%;
+}
+
+.slider-thumb {
+  width: 3.25vw;
+  height: 3.25vw;
 }
 
 }
